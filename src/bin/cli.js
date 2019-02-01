@@ -92,13 +92,39 @@ program
     const cache = require('../scripts/cache');
     cache({ cmd, cache: options.cache });
   });
+
+program
+  .command('add [type]')
+  .description('添加页面或者组件, type 支持 page(p),component(c)')
+  .action(async (type, options) => {
+    const choices = [{ name: '添加 组件', value: 'component' }, { name: '添加 页面', value: 'page' }];
+    if (!type) {
+      ({ type } = await inquirer.prompt([
+        {
+          type: 'list',
+          name: 'type',
+          message: '选择初始化内容！',
+          choices,
+        },
+      ]));
+    } else if (type.length === 1) {
+      type = { c: 'component', p: 'page' }[type];
+    }
+    const choice = choices.find(i => i.value === type);
+    if (choice) {
+      console.log(type);
+    } else {
+      error(`不支持该选项: ${type}`);
+      options.outputHelp();
+    }
+  });
 const initChoices = [
   { name: '添加 提交前 lint 和 prettier', value: 'lint' },
   { name: '添加 commit msg规范检测', value: 'commit' },
 ];
 program
-  .command('add [type]')
-  .description('添加项目配置,支持:lint,commit')
+  .command('init [type]')
+  .description('添加eslint、commitmsg校验, 支持:lint,commit')
   .action(async (type, options) => {
     if (!type) {
       ({ type } = await inquirer.prompt([
