@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { hot } from 'react-hot-loader';
 
 class Container extends Component {
   state = {};
@@ -9,5 +10,4 @@ class Container extends Component {
     return <div className="crm-container">index</div>;
   }
 }
-
-export default Container;
+export default hot(module)(Container);
