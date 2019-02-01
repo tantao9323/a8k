@@ -103,7 +103,7 @@ program
         {
           type: 'list',
           name: 'type',
-          message: '选择初始化内容！',
+          message: '选择添加选项',
           choices,
         },
       ]));
