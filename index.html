@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>a8k</title>
+    <meta name="description" content="集成 webpack + react 的最佳实践配置的构建工具">
+    
+    
+    <link rel="preload" href="/a8k/assets/css/0.styles.24cf46cd.css" as="style"><link rel="preload" href="/a8k/assets/js/app.2dd200e2.js" as="script"><link rel="preload" href="/a8k/assets/js/3.d943eb84.js" as="script"><link rel="prefetch" href="/a8k/assets/js/2.7974f97d.js"><link rel="prefetch" href="/a8k/assets/js/4.4c4b9dfb.js"><link rel="prefetch" href="/a8k/assets/js/5.db4d31f4.js"><link rel="prefetch" href="/a8k/assets/js/6.bd2a0338.js">
+    <link rel="stylesheet" href="/a8k/assets/css/0.styles.24cf46cd.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/a8k/" class="home-link router-link-exact-active router-link-active"><!----> <span class="site-name">a8k</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/a8k/guide/" class="nav-link">指南</a></div><div class="nav-item"><a href="/a8k/config/" class="nav-link">配置</a></div><div class="nav-item"><a href="https://github.com/hxfdarling/a8k" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  在 GitHub 上编辑此页
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/a8k/guide/" class="nav-link">指南</a></div><div class="nav-item"><a href="/a8k/config/" class="nav-link">配置</a></div><div class="nav-item"><a href="https://github.com/hxfdarling/a8k" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  在 GitHub 上编辑此页
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <!----> </div> <div class="home"><div class="hero"><!----> <h1>a8k</h1> <p class="description">
+      集成 webpack + react 的最佳实践配置的构建工具
+    </p> <p class="action"><a href="/a8k/guide/" class="nav-link action-button">快速上手 →</a></p></div> <div class="features"><div class="feature"><h2>简洁至上</h2> <p>用最少的配置启动你的React项目开发。</p></div><div class="feature"><h2>Webpack驱动</h2> <p>享受 React + webpack 的极致开发体验。</p></div><div class="feature"><h2>高性能</h2> <p>a8k 集成最佳构建实践，你只需关心你的代码，无需关心构建。</p></div></div> <div class="content custom"><h3 id="简单上手"><a href="#简单上手" aria-hidden="true" class="header-anchor">#</a> 简单上手</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 安装</span>
+yarn global add a8k
+<span class="token comment"># 或者：npm install -g a8k</span>
+
+<span class="token comment"># 新建一个 项目 文件</span>
+k create <span class="token function">test</span>
+
+<span class="token comment"># 进入项目目录</span>
+<span class="token function">cd</span> <span class="token function">test</span>
+
+<span class="token comment"># 开始开发</span>
+k dev
+
+<span class="token comment"># 构建发布文件</span>
+k build
+</code></pre></div><div class="warning custom-block"><p class="custom-block-title">注意</p> <p>请确保你的 Node.js 版本 &gt;= 8。</p></div></div> <div class="footer">
+    MIT Licensed | Copyright © 2019-present zman
+  </div></div> <!----></div></div>
+    <script src="/a8k/assets/js/app.2dd200e2.js" defer></script><script src="/a8k/assets/js/3.d943eb84.js" defer></script>
+  </body>
+</html>
